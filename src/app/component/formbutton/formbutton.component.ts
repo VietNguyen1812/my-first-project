@@ -13,6 +13,8 @@ export class FormbuttonComponent implements OnInit {
   {
 
   }
+
+  display : boolean = false;
   blogList !:BlogModel[]
   ngOnInit(): void {
       this.store.select(getBlog).subscribe(item => {
@@ -21,4 +23,9 @@ export class FormbuttonComponent implements OnInit {
 
       })
   }
+
+  AddBlog(){
+    this.display = true;
+  }
+
 }

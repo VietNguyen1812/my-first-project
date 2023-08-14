@@ -1,3 +1,23 @@
+
+<button pButton type="button" class="p-button-info" (click) ="AddBlog()">Add (+)</button>
+<p-dialog header="Title" [(visible)]="display">
+  <h5>Titlle</h5>
+  <span class="p-float-label">
+      <input id="float-input" type="text" pInputText >
+      <label for="float-input">Username</label>
+  </span>
+  <h5>Description</h5>
+  <span class="p-float-label">
+      <input id="float-input" type="text" pInputText >
+      <label for="float-input">Username</label>
+  </span>
+  <br>
+  <button pButton type="button" class="p-button-info" >Save
+  </button>
+  <button pButton type="button" class="p-button-warning custom-text" >Cancel
+  </button>
+</p-dialog>
+<br/>
 <p-table [value]="this.blogList">
     <ng-template pTemplate="header">
         <tr>

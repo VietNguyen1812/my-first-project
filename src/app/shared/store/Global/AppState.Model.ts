@@ -1,6 +1,7 @@
-import { BlogModel } from "../blog/blog.common";
+import { BlogModel, Blogs } from "../blog/blog.common";
 
 export interface AppStateModel {
 
   blog:BlogModel
+  blogs : Blogs
 }
