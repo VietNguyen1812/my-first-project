@@ -12,6 +12,9 @@ import { CounterComponent } from './component/counter/counter.component';
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './shared/store/counter.reducer';
 import { blogReducer } from './shared/store/blog/blog.reducer';
+import {DialogModule} from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { HeaderMenuComponent } from './component/header-menu/header-menu.component';
 import { AppState } from './shared/store/Global/App.state';
 @NgModule({
@@ -30,6 +33,8 @@ import { AppState } from './shared/store/Global/App.state';
     ButtonModule,
     TabMenuModule,
     TableModule,
+    DialogModule,
+    BrowserAnimationsModule,
     StoreModule.forRoot(AppState),
   ],
   providers: [],
